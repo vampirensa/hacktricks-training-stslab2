@@ -39,4 +39,4 @@ jobs:
         run: aws sts get-call-identity
 
       - name: Run aws cli
-        run: aws iam list-attached-role-policies
+        run: aws iam list-attached-role-policies --role-name GithubFederation
