@@ -36,7 +36,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run aws cli
-        run: aws sts get-call-identity
+        run: aws sts get-caller-identity
 
       - name: Run aws cli
-        run: aws iam list-attached-role-policies
+        run: aws iam list-attached-role-policies --role-name GithubFederation
